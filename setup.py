@@ -1,5 +1,3 @@
-import os
-
 import setuptools
 
 with open("README.md", "r") as fh:
@@ -17,10 +15,10 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     # include_package_data=True,
     package_data={
-
+        'naive_stopwords': ['data/*']
     },
     install_requires=[
-        
+
     ],
     dependency_links=[
 

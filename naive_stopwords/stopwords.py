@@ -60,5 +60,3 @@ class Stopwords(AbstractStopwords):
 
     def is_empty(self):
         return self.size() == 0
-
-
