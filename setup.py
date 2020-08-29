@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="naive-stopwords",
-    version="0.0.1",
+    version="0.0.2",
     description="Stopwords for Chinese.",
     long_description=long_description,
     long_description_content_type="text/markdown",
