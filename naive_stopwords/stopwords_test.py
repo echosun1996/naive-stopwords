@@ -10,6 +10,7 @@ class StopwordsTest(unittest.TestCase):
         sw = Stopwords()
         print(sw.size())
         print(sw.contains('的'))
+        sw.dump('tmp.txt')
 
 
 if __name__ == "__main__":

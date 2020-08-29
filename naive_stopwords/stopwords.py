@@ -22,6 +22,9 @@ class AbstractStopwords(abc.ABC):
     def is_empty(self):
         raise NotImplementedError()
 
+    def dump(self, path):
+        raise NotImplementedError()
+
 
 class Stopwords(AbstractStopwords):
 
@@ -60,3 +63,8 @@ class Stopwords(AbstractStopwords):
 
     def is_empty(self):
         return self.size() == 0
+
+    def dump(self, path):
+        with open(path, mode='wt', encoding='utf8') as fout:
+            for w in sorted(self.stopwords_set):
+                fout.write(w + '\n')
